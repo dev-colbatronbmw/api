@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>add form</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/stylesheet.css" />
+  </head>
+  <body>
+    <div class="container pt-5">
+      <form action="/add_product" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="prodName"
+            name="prodName"
+            placeholder="Enter Product Name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <input
+            type="text"
+            class="form-control"
+            id="prodDesc"
+            name="prodDesc"
+            placeholder="Enter Description"
+          />
+        </div>
+        <div class="form-group">
+          <label for="description">Price</label>
+          <input
+            type="number"
+            class="form-control"
+            id="prodPrice"
+            name="prodPrice"
+            placeholder="Enter Price"
+          />
+        </div>
+        <div class="form-group">
+          <label for="rating">Rating</label>
+          <select class="form-control" id="prodRating" name="prodRating">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">
+          Add New Product
+        </button>
+      </form>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/e8ae0ed4a9.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.slim.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+  </body>
+</html>
